@@ -38,6 +38,7 @@ web fingerprinting research
 - [Privacy, Standards, and Anti-Standards](https://www.youtube.com/watch?v=xxk9UKulC1c) (Peter Snyder, 2019)
 - [Fingerprinting and Privacy on the Web](https://www.youtube.com/watch?v=OVh0oHbmla0) (Peter Snyder, 2019)
 - [Browser fingerprinting: past, present and possible future](https://www.youtube.com/watch?v=PLVJ5yQb0vc) (Pierre Laperdrix, 2019)
+- [Browser fingerprints for a more secure web](https://www.youtube.com/watch?v=P_nYYsaVi1w) (Julien Sobrier & Ping Yan, 2019)
 - [Tales From the Trenches: Fingerprints on the Web - Igor Trindade Oliveira](https://www.youtube.com/watch?v=hZg0Ks_IHjQ) (Igor Trindade Oliveira , 2018)
 - [Fp-Scanner: The Privacy Implications of Browser Fingerprint Inconsistencies](https://www.youtube.com/watch?v=n-kN0Ys4yNM) (Antoine Vastel, 2018)
 - [Tracking Browser Fingerprint Evolutions](https://www.youtube.com/watch?v=xNwfdsu4ZKE) (Antoine Vastel, 2018)
