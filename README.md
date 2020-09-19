@@ -33,6 +33,7 @@ web fingerprinting research
 ## Talks
 - [Exploring the Privacy Threats of Browser Extension Fingerprinting](https://www.youtube.com/watch?v=mfmAWRzpbCU) (Soroush Karami,, 2020)
 - [Fingerprinting the Fingerprinters: Learning to Detect Browser Fingerprinting Behaviors](https://www.youtube.com/watch?v=bsgTYQyaPG4) (Umar Iqbal, 2020)
+- [Two New Ways To Exploit A Fixed Browser Fingerprinting Flaw](https://www.youtube.com/watch?v=FBjlrVD5rOs) (Xiaoyin Liu, 2019)
 - [Automated Methods for Fingerprinting Detection](https://www.youtube.com/watch?v=qFWPTeDSJn4) (Sarah Bird, 2019)
 - [Next Steps For Browser Privacy: Pursuing Privacy Protections Beyond Extensions](https://www.youtube.com/watch?v=odtcH6UmkbU) (Peter Snyder, 2019)
 - [Privacy, Standards, and Anti-Standards](https://www.youtube.com/watch?v=xxk9UKulC1c) (Peter Snyder, 2019)
