@@ -3,7 +3,7 @@ web fingerprinting research
 
 ## Papers
 - [Carnus: Exploring the Privacy Threats of Browser Extension Fingerprinting](https://www.ndss-symposium.org/wp-content/uploads/2020/02/24383.pdf) (Karami et al., 2020)
-- [Shedding light on web privacy impact assessment: A case study of the Ambient Light Sensor API](https://lukaszolejnik.com/SheddingLightWebPrivacyImpactAssessmentIWPE20.pdf) (Olejnik et al., 2020)
+- [Shedding light on web privacy impact assessment: A case study of the Ambient Light Sensor API](https://lukaszolejnik.com/SheddingLightWebPrivacyImpactAssessmentIWPE20.pdf) (Olejnik, 2020)
 - [Fingerprinting the Fingerprinters: Learning to Detect Browser Fingerprinting Behaviors](https://umariqbal.com/papers/fpinspector-sp2021.pdf) (Iqbal et al., 2020)
 - [Taming The Shape Shifter: Detecting Anti-fingerprinting Browsers](https://hal.archives-ouvertes.fr/hal-02612461/document) (Laperdrix et al., 2020)
 - [Long-Term Observation on Browser Fingerprinting: Users’ Trackability and Perspective](https://petsymposium.org/2020/files/papers/issue2/popets-2020-0041.pdf) (Pugliese et al., 2020)
