@@ -18,7 +18,7 @@ web fingerprinting research
 - [Fingerprinting web users through font metrics](https://fc15.ifca.ai/preproceedings/paper_83.pdf) (Fifield et al., 2015)
 - [PriVaricator: Deceiving Fingerprinters with Little White Lies](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr1-1.pdf) (Nikiforakis et al., 2014)
 - [The Web Never Forgets: Persistent Tracking Mechanisms in the Wild](https://securehomes.esat.kuleuven.be/~gacar/persistent/the_web_never_forgets.pdf) (Englehardt, et al., 2014)
-- [Cookieless Monster: Exploring the Ecosystem of Web-based Device Fingerprinting](https://sites.cs.ucsb.edu/~vigna/publications/2013_SP_cookieless.pdf) (Nikiforakis et al., 2013)
+- [Cookieless Monster: Exploring the Ecosystem of Web-based Device Fingerprinting](http://consideredharmful.info/papers/Paper%20-%20Hot%20Topics%20in%20Computer%20Security%20-%20Cookieless%20Monster.pdf) (Nikiforakis et al., 2013)
 - [Reducing the value of a browser fingerprint](https://www.researchgate.net/publication/302695509_Reducing_the_value_of_a_browser_fingerprint) (Jenkins et al., 2013)
 - [Pixel Perfect: Fingerprinting Canvas in HTML5](https://hovav.net/ucsd/dist/canvas.pdf) (Mowery et al., 2012)
 
