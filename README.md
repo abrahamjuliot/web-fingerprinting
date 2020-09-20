@@ -21,6 +21,7 @@ web fingerprinting research
 - [Cookieless Monster: Exploring the Ecosystem of Web-based Device Fingerprinting](http://consideredharmful.info/papers/Paper%20-%20Hot%20Topics%20in%20Computer%20Security%20-%20Cookieless%20Monster.pdf) (Nikiforakis et al., 2013)
 - [Reducing the value of a browser fingerprint](https://www.researchgate.net/publication/302695509_Reducing_the_value_of_a_browser_fingerprint) (Jenkins et al., 2013)
 - [Pixel Perfect: Fingerprinting Canvas in HTML5](https://hovav.net/ucsd/dist/canvas.pdf) (Mowery et al., 2012)
+- [How Unique Is Your Web Browser?](https://panopticlick.eff.org/static/browser-uniqueness.pdf) (Eckersley, 2010)
 
 ## Articles
 - [Shedding light on designing web features with privacy: risks, impact assessments, case study](https://blog.lukaszolejnik.com/shedding-light-on-designing-web-features-with-privacy-risks-impact-assessments-case-study/) (Olejnik, 2020)
