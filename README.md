@@ -15,6 +15,7 @@ web fingerprinting research
 - [On Estimating Platforms of Web User with JavaScript Math Object](https://meiji.elsevierpure.com/en/publications/on-estimating-platforms-of-web-user-with-javascript-math-object) [[google](https://www.google.com/books/edition/_/4-xqDwAAQBAJ?hl=en&gbpv=1&pg=407)] (Saito et al., 2018)
 - [FP-STALKER: Tracking Browser Fingerprint Evolutions](https://hal.inria.fr/hal-01652021/document) (Laperdrix et al., 2017)
 - [Inhibiting Browser Fingerprinting and Tracking](https://eprints.soton.ac.uk/408726/1/possible_to_tackle_fingerprinting_complete2.pdf) (Luangmaneerote et al., 2017)
+- [Online tracking: A 1-million-site measurement and analysis](https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf) (Englehardt, et al., 2016)
 - [FPGuard: Detection and Prevention of Browser Fingerprinting](https://www.researchgate.net/publication/300781053_FPGuard_Detection_and_Prevention_of_Browser_Fingerprinting) (Weldemariam et al., 2015)
 - [Fingerprinting web users through font metrics](https://fc15.ifca.ai/preproceedings/paper_83.pdf) (Fifield et al., 2015)
 - [PriVaricator: Deceiving Fingerprinters with Little White Lies](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr1-1.pdf) (Nikiforakis et al., 2014)
