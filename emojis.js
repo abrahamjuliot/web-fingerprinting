@@ -1828,10 +1828,10 @@ const getEmojis = (emojis, limitSample = false) => {
             document.body.appendChild(iframeElement)
             const doc = iframeElement.contentDocument
             const { body } = doc
-			body.setAttribute('style', 'position: absolute; font-size: 200px; height: auto;')
-			if (limitSample) {
-				emojis = emojis.slice(99, 199) // limit to imporve performance
-			}
+            body.setAttribute('style', 'position: absolute; font-size: 200px; height: auto;')
+            if (limitSample) {
+                emojis = emojis.slice(99, 199) // limit to imporve performance
+            }
             const emojiRects = emojis
                 .map(emoji => String.fromCodePoint(...emoji))
                 .map(emoji => {
@@ -1842,9 +1842,9 @@ const getEmojis = (emojis, limitSample = false) => {
                         ...toJSONParsed(domRect)
                     }
                 })
-				
+
             iframeElement.parentNode.removeChild(iframeElement)
-			return resolve(emojiRects)
+            return resolve(emojiRects)
         } catch (error) {
             console.error(error)
             return reject(error)
