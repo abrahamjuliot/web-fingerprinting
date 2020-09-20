@@ -10,6 +10,7 @@ web fingerprinting research
 - [Robust Website Fingerprinting Through the Cache Occupancy Channel](https://arxiv.org/pdf/1811.07153.pdf) (Shusterman et al., 2019)
 - [Browser Fingerprinting: A survey](https://arxiv.org/pdf/1905.01051.pdf) (Laperdrix et al., 2019)
 - [Evaluating Anti-Fingerprinting Privacy Enhancing Technologies](https://www1.icsi.berkeley.edu/~mct/pubs/www18.pdf) (Tschantz et al., 2019)
+- [Hiding in the Crowd: an Analysis of the Effectiveness of Browser Fingerprinting at Large Scale](https://hal.inria.fr/hal-01718234v2/document) (Laperdrix et al., 2018)
 - [Clock Around the Clock: Time-Based Device Fingerprinting](http://www.eurecom.fr/fr/publication/5664/download/sec-publi-5664.pdf) (Sanchez-Rola et al., 2018)
 - [On Estimating Platforms of Web User with JavaScript Math Object](https://meiji.elsevierpure.com/en/publications/on-estimating-platforms-of-web-user-with-javascript-math-object) [[google](https://www.google.com/books/edition/_/4-xqDwAAQBAJ?hl=en&gbpv=1&pg=407)] (Saito et al., 2018)
 - [FP-STALKER: Tracking Browser Fingerprint Evolutions](https://hal.inria.fr/hal-01652021/document) (Laperdrix et al., 2017)
