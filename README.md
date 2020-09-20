@@ -53,7 +53,7 @@ web fingerprinting research
 - [Advanced Browser Fingerprinting](https://www.youtube.com/watch?v=kk2GkZv6Wjs) (Yan Zhu, 2015)
 - [Website Fingerprinting Attacks and Defenses](https://www.youtube.com/watch?v=RJyQFaQsyz0) (Rob Johnson, 2014)
 - [Web Fingerprinting: How, Who, and Why?](https://www.youtube.com/watch?v=aSfh0efL7rs) (Nick Nikiforakis, 2013)
-- [How Unique is Your Browser](https://www.youtube.com/watch?v=1uYx-F-nvFM) (Eckersley, 2010)
+- [How Unique is Your Browser](https://www.youtube.com/watch?v=1uYx-F-nvFM) (Peter Eckersley, 2010)
 
 ## Researchers
 - https://antoinevastel.com (Antoine Vastel)
