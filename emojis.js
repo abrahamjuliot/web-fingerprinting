@@ -1830,7 +1830,7 @@ const getEmojis = (emojis, limitSample = false) => {
             const { body } = doc
             body.setAttribute('style', 'position: absolute; font-size: 200px; height: auto;')
             if (limitSample) {
-                emojis = emojis.slice(99, 199) // limit to imporve performance
+                emojis = emojis.slice(99, 199) // limit to improve performance
             }
             const emojiRects = emojis
                 .map(emoji => String.fromCodePoint(...emoji))
