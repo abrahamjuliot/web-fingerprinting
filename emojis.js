@@ -1818,7 +1818,7 @@ const emojis = [
 
 const toJSONParsed = (x) => JSON.parse(JSON.stringify(x))
 
-const getEmojis = (emojis, limitSample = false) => {
+const getEmojis = (emojis, { limitSample = false } = {}) => {
     return new Promise((resolve, reject) => {
         try {
             const iframeElement = document.createElement('iframe')
