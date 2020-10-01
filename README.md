@@ -70,9 +70,9 @@ web fingerprinting research
 - https://senglehardt.com (Steven Englehardt)
 
 ## Test Sites
-- https://arkenfox.github.io/TZP/tzp.html
-- https://privacycheck.sec.lrz.de/
-- https://canvasblocker.kkapsner.de/test/
+- https://arkenfox.github.io/TZP
+- https://privacycheck.sec.lrz.de
+- https://canvasblocker.kkapsner.de/test
 
 ## Test Suites
 - https://www.lambdatest.com
