@@ -2,6 +2,7 @@
 web fingerprinting research
 
 ## Papers
+- [Learning-based Practical Smartphone Eavesdropping with Built-in Accelerometer](https://www.ndss-symposium.org/wp-content/uploads/2020/02/24076-paper.pdf) (Ba et al., 2020)
 - [Carnus: Exploring the Privacy Threats of Browser Extension Fingerprinting](https://www.ndss-symposium.org/wp-content/uploads/2020/02/24383.pdf) (Karami et al., 2020)
 - [Shedding light on web privacy impact assessment: A case study of the Ambient Light Sensor API](https://lukaszolejnik.com/SheddingLightWebPrivacyImpactAssessmentIWPE20.pdf) (Olejnik, 2020)
 - [Fingerprinting the Fingerprinters: Learning to Detect Browser Fingerprinting Behaviors](https://umariqbal.com/papers/fpinspector-sp2021.pdf) (Iqbal et al., 2020)
@@ -38,6 +39,7 @@ web fingerprinting research
 - [Bot detection 101 #1 – Preface](https://adtechmadness.wordpress.com/2019/03/04/bot-detection-101-1-preface/) (Adtech Madness, 2019)
 
 ## Talks
+- [Learning-based Practical Smartphone Eavesdropping with Built-in Accelerometer](https://www.youtube.com/watch?v=o4qJg32miVA) (Shiqing Luo, 2020)
 - [Taming The Shape Shifter: Detecting Anti-fingerprinting Browsers](https://www.youtube.com/watch?v=7KYg8qV5Z1Y) (Babak Amin Azad, 2020)
 - [Exploring the Privacy Threats of Browser Extension Fingerprinting](https://www.youtube.com/watch?v=mfmAWRzpbCU) (Soroush Karami, 2020)
 - [Fingerprinting the Fingerprinters: Learning to Detect Browser Fingerprinting Behaviors](https://www.youtube.com/watch?v=bsgTYQyaPG4) (Umar Iqbal, 2020)
