@@ -72,6 +72,9 @@ web fingerprinting research
 - https://www.securitee.org (Nick Nikiforakis)
 - https://senglehardt.com (Steven Englehardt)
 
+## Browser Mitigation
+- [Mitigating Browser Fingerprinting in Web Specifications](https://www.w3.org/TR/fingerprinting-guidance) (W3C)
+
 ## Test Sites
 - https://arkenfox.github.io/TZP
 - https://privacycheck.sec.lrz.de
