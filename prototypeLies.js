@@ -187,7 +187,7 @@ const getPrototypeLies = () => {
                     return
                 } catch (error) {
                     // API may be blocked or unsupported
-                    return console.log(apiName)
+                    return console.error(`${apiName} test failed`)
                 }
             })
 
