@@ -14,7 +14,6 @@ const getPrototypeLies = () => {
 
     // creating a new instance of the API function should throw a TypeError
     const getNewInstanceTypeErrorLie = apiFunction => {
-        let newTypeError
         try {
             new apiFunction()
             return true
