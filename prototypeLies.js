@@ -48,7 +48,7 @@ const getPrototypeLies = () => {
         }
     }
 
-    // toString() and toString().toString() should return a native string
+    // toString() and toString.toString() should return a native string
     const getToStringLie = (apiFunction, name) => {
         /*
         Accepted strings:
@@ -59,12 +59,17 @@ const getPrototypeLies = () => {
         'function () { [native code] }'
         `function () {\n    [native code]\n}`
         */
-        const nativeString = new RegExp(
-            `^function (get ${name}|${name}|)\\(\\) {(\\n    | )\\[native code\\](\\n| )}$`
-        )
+        const trust = (name) => ({
+            [`function ${name}() { [native code] }`]: true,
+            [`function get ${name}() { [native code] }`]: true,
+            [`function () { [native code] }`]: true,
+            [`function ${name}() {${'\n'}    [native code]${'\n'}}`]: true,
+            [`function get ${name}() {${'\n'}     [native code]${'\n'} }`]: true,
+            [`function () {${'\n'}     [native code]${'\n'} }`]: true
+        })
         return (
-            !nativeString.test(apiFunction.toString()) ||
-            !nativeString.test(apiFunction.toString().toString())
+            !trust(name)[apiFunction.toString()] ||
+            !trust('toString')[apiFunction.toString.toString()]
         )
     }
 
