@@ -1,6 +1,38 @@
-const getPrototypeLies = () => {
-    // Lie Tests
+const getIframe = () => {
+    try {
+        const numberOfIframes = window.length
+        const frag = new DocumentFragment()
+        const div = document.createElement('div')
+        frag.appendChild(div)
+        const ghost = () => `
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            left:-10000px;
+            visibility: hidden;
+        `
+        div.innerHTML = `<div style="${ghost()}"><iframe></iframe></div>`
+        document.body.appendChild(frag)
+        const iframeWindow = window[numberOfIframes]
+        return {
+            iframeWindow,
+            div
+        }
+    } catch (error) {
+        captureError(error, 'client blocked phantom iframe')
+        return {
+            iframeWindow: window,
+            div: undefined
+        }
+    }
+}
+const {
+    iframeWindow,
+    div: iframeContainerDiv
+} = getIframe()
 
+const getPrototypeLies = iframeWindow => {
+    // Lie Tests
     // object constructor descriptor should return undefined properties
     const getUndefinedValueLie = (obj, name) => {
         const objName = obj.name
@@ -49,7 +81,7 @@ const getPrototypeLies = () => {
     }
 
     // toString() and toString.toString() should return a native string
-    const getToStringLie = (apiFunction, name) => {
+    const getToStringLie = (apiFunction, name, iframeWindow) => {
         /*
         Accepted strings:
         'function name() { [native code] }'
@@ -59,7 +91,17 @@ const getPrototypeLies = () => {
         'function () { [native code] }'
         `function () {\n    [native code]\n}`
         */
-        const trust = (name) => ({
+        const apiFunctionToString = (
+            iframeWindow ?
+            iframeWindow.Function.prototype.toString.call(apiFunction) :
+            apiFunction.toString()
+        )
+        const apiFunctionToStringToString = (
+            iframeWindow ?
+            iframeWindow.Function.prototype.toString.call(apiFunction.toString) :
+            apiFunction.toString.toString()
+        )
+        const trust = name => ({
             [`function ${name}() { [native code] }`]: true,
             [`function get ${name}() { [native code] }`]: true,
             [`function () { [native code] }`]: true,
@@ -68,8 +110,8 @@ const getPrototypeLies = () => {
             [`function () {${'\n'}     [native code]${'\n'} }`]: true
         })
         return (
-            !trust(name)[apiFunction.toString()] ||
-            !trust('toString')[apiFunction.toString.toString()]
+            !trust(name)[apiFunctionToString] ||
+            !trust('toString')[apiFunctionToStringToString]
         )
     }
 
@@ -135,12 +177,12 @@ const getPrototypeLies = () => {
         }
         const name = apiFunction.name.replace(/get\s/, '')
         const lies = {
-            // custom lie string names: adjust if desired
+            // custom lie string names
             'failed undefined value': obj ? getUndefinedValueLie(obj, name) : false,
             'failed new instance type error': getNewInstanceTypeErrorLie(apiFunction),
             'failed class extends type error': getClassExtendsTypeErrorLie(apiFunction),
             'failed null conversion type error': getNullConversionTypeErrorLie(apiFunction),
-            'failed to string': getToStringLie(apiFunction, name),
+            'failed to string': getToStringLie(apiFunction, name, iframeWindow),
             'failed prototype in function': getPrototypeInFunctionLie(apiFunction),
             'failed descriptor': getDescriptorLie(apiFunction),
             'failed own property': getOwnPropertyLie(apiFunction),
@@ -158,17 +200,23 @@ const getPrototypeLies = () => {
     // Lie Detector
     const createLieDetector = () => {
         const props = {} // lie list and detail
+        let totalPropCount = 0 // total properties searched
         return {
             getProps: () => props,
+            getCount: () => totalPropCount,
             searchLies: (obj, {
                 ignore
-            } = {}) => Object.getOwnPropertyNames(obj.prototype).forEach(name => {
+            } = {}) => Object.getOwnPropertyNames(!!obj && !!obj.prototype ? obj.prototype : !!obj ? obj : {}).forEach(name => {
                 if (name == 'constructor' || (ignore && new Set(ignore).has(name))) {
                     return
                 }
-                const apiName = `${obj.name}.${name}`
+                const objectNameString = /\s(.+)\]/
+                const apiName = `${
+                    obj.name ? obj.name : objectNameString.test(obj) ? objectNameString.exec(obj)[1] : undefined
+                }.${name}`
+                totalPropCount++
                 try {
-                    const proto = obj.prototype
+                    const proto = obj.prototype ? obj.prototype : obj
                     let res // response from getPrototypeLies
 
                     // search if function
@@ -177,7 +225,7 @@ const getPrototypeLies = () => {
                         if (typeof apiFunction == 'function') {
                             res = getPrototypeLies(proto[name])
                             if (res.lied) {
-                                return (props[`${obj.name}.${name}`] = res.lieTypes)
+                                return (props[apiName] = res.lieTypes)
                             }
                             return
                         }
@@ -194,7 +242,6 @@ const getPrototypeLies = () => {
                     return console.error(`${apiName} test failed`)
                 }
             })
-
         }
     }
 
@@ -210,15 +257,17 @@ const getPrototypeLies = () => {
     searchLies(HTMLCanvasElement)
     searchLies(Navigator)
     searchLies(Screen)
+    searchLies(Math)
     searchLies(Date)
     searchLies(Intl.DateTimeFormat)
     searchLies(Intl.RelativeTimeFormat)
     searchLies(CanvasRenderingContext2D)
-    searchLies(PluginArray)
-    searchLies(Plugin)
     searchLies(Document)
 
     // if supported
+    if ('MediaDevices' in window) {
+        searchLies(MediaDevices)
+    }
     if ('WebGLRenderingContext' in window) {
         searchLies(WebGLRenderingContext)
     }
@@ -235,18 +284,42 @@ const getPrototypeLies = () => {
         searchLies(AudioBuffer)
     }
 
+    /* potential targets:
+        RTCPeerConnection
+        TextMetrics
+        Plugin
+        PluginArray
+        MimeType
+        MimeTypeArray
+        Worker
+    */
+
     // return lies list and detail 
     const props = lieDetector.getProps()
+    const totalPropCount = lieDetector.getCount()
     return {
         lieList: Object.keys(props),
-        lieDetail: props
+        lieDetail: props,
+        lieCount: Object.keys(props).reduce((acc, key) => acc + props[key].length, 0),
+        totalPropCount,
     }
 }
 
 // start program
-const { lieList, lieDetail } = getPrototypeLies() // execute and destructure the list and detail
+const start = performance.now()
+const {
+    lieList,
+    lieDetail,
+    lieCount,
+    totalPropCount
+} = getPrototypeLies(iframeWindow) // execute and destructure the list and detail
+if (iframeContainerDiv) {
+    iframeContainerDiv.parentNode.removeChild(iframeContainerDiv)
+}
+const perf = performance.now() - start
 
 // log to see the goods and analyze
+console.log(perf.toFixed(2) + ' ms')
 console.log(lieList)
 console.log(lieDetail)
 
