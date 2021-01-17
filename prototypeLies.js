@@ -19,7 +19,6 @@ const getIframe = () => {
             div
         }
     } catch (error) {
-        captureError(error, 'client blocked phantom iframe')
         return {
             iframeWindow: window,
             div: undefined
