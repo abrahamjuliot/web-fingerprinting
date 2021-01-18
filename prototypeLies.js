@@ -121,9 +121,10 @@ const getPrototypeLies = iframeWindow => {
 			[`function get ${name}() { [native code] }`]: true,
 			[`function () { [native code] }`]: true,
 			[`function ${name}() {${'\n'}    [native code]${'\n'}}`]: true,
-			[`function get ${name}() {${'\n'}     [native code]${'\n'} }`]: true,
-			[`function () {${'\n'}     [native code]${'\n'} }`]: true
+			[`function get ${name}() {${'\n'}    [native code]${'\n'}}`]: true,
+			[`function () {${'\n'}    [native code]${'\n'}}`]: true
 		})
+		console.log(trust(name)[apiFunctionToString] || apiFunctionToString)
         return (
             !trust(name)[apiFunctionToString] ||
             !trust('toString')[apiFunctionToStringToString]
@@ -314,7 +315,7 @@ const getPrototypeLies = iframeWindow => {
         lieList: Object.keys(props).sort(),
         lieDetail: props,
 		lieCount: Object.keys(props).reduce((acc, key) => acc+props[key].length, 0),
-		propsSearched,
+		propsSearched
     }
 }
 
