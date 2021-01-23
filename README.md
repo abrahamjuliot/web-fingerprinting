@@ -38,6 +38,7 @@ web fingerprinting research
 - [Bot detection 101 #3 – Cheating browser fingerprinting](https://adtechmadness.wordpress.com/2019/03/11/bot-detection-101-3-cheating-browser-fingerprinting/) (Adtech Madness, 2019)
 - [Bot detection 101 #2 – Entering browser fingerprinting](https://adtechmadness.wordpress.com/2019/03/05/bot-detection-101-2-entering-browser-fingerprinting/) (Adtech Madness, 2019)
 - [Bot detection 101 #1 – Preface](https://adtechmadness.wordpress.com/2019/03/04/bot-detection-101-1-preface/) (Adtech Madness, 2019)
+- [Dull captaincy or the way Tor Project fights browser fingerprinting](https://github.com/KOLANICH-research/Article-2015-Dull-captaincy-or-the-way-Tor-Project-fights-browser-fingerprinting) (KOLANICH, 2015)
 
 ## Talks
 - [Learning-based Practical Smartphone Eavesdropping with Built-in Accelerometer](https://www.youtube.com/watch?v=o4qJg32miVA) (Shiqing Luo, 2020)
@@ -59,6 +60,7 @@ web fingerprinting research
 - [Beauty and the Beast: Diverting modern web browsers to build unique browser fingerprints](https://www.youtube.com/watch?v=p0doExrQwY0) (Pierre Laperdrix, 2016)
 - [Panopticlick: Fingerprinting Your Web Presence](https://www.youtube.com/watch?v=3xQLy6lH5OE) (Bill Budington, 2016)
 - [Everything you always wanted to know about web-based device fingerprinting (but were afraid to ask)](https://www.youtube.com/watch?v=5Y1Y96jC5AA) (Nick Nikiforakis, 2016)
+- [Where does darknet anonimity end](https://www.youtube.com/watch?v=zKgKk5bsbdY) (Denis Makrushin, Maria Garnaeva, 2015)
 - [Advanced Browser Fingerprinting](https://www.youtube.com/watch?v=kk2GkZv6Wjs) (Yan Zhu, 2015)
 - [Website Fingerprinting Attacks and Defenses](https://www.youtube.com/watch?v=RJyQFaQsyz0) (Rob Johnson, 2014)
 - [Web Fingerprinting: How, Who, and Why?](https://www.youtube.com/watch?v=aSfh0efL7rs) (Nick Nikiforakis, 2013)
