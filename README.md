@@ -2,6 +2,7 @@
 web fingerprinting research
 
 ## Papers
+- [Tales of Favicons and Caches: Persistent Tracking in Modern Browsers](https://www.cs.uic.edu/~polakis/papers/solomos-ndss21.pdf) (Polakis et al., 2021)
 - [Learning-based Practical Smartphone Eavesdropping with Built-in Accelerometer](https://www.ndss-symposium.org/wp-content/uploads/2020/02/24076-paper.pdf) (Ba et al., 2020)
 - [Carnus: Exploring the Privacy Threats of Browser Extension Fingerprinting](https://www.ndss-symposium.org/wp-content/uploads/2020/02/24383.pdf) (Karami et al., 2020)
 - [Shedding light on web privacy impact assessment: A case study of the Ambient Light Sensor API](https://lukaszolejnik.com/SheddingLightWebPrivacyImpactAssessmentIWPE20.pdf) (Olejnik, 2020)
