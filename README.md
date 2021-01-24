@@ -9,6 +9,7 @@ web fingerprinting research
 - [Fingerprinting the Fingerprinters: Learning to Detect Browser Fingerprinting Behaviors](https://umariqbal.com/papers/fpinspector-sp2021.pdf) (Iqbal et al., 2020)
 - [Taming The Shape Shifter: Detecting Anti-fingerprinting Browsers](https://hal.archives-ouvertes.fr/hal-02612461/document) (Laperdrix et al., 2020)
 - [Long-Term Observation on Browser Fingerprinting: Users’ Trackability and Perspective](https://petsymposium.org/2020/files/papers/issue2/popets-2020-0041.pdf) (Pugliese et al., 2020)
+- [FP-Crawlers: Studying the Resilience of Browser Fingerprinting to Block Crawlers](https://hal.inria.fr/hal-02441653/document) (Vastel et al., 2020)
 - [Robust Website Fingerprinting Through the Cache Occupancy Channel](https://arxiv.org/pdf/1811.07153.pdf) (Shusterman et al., 2019)
 - [Browser Fingerprinting: A survey](https://arxiv.org/pdf/1905.01051.pdf) (Laperdrix et al., 2019)
 - [Evaluating Anti-Fingerprinting Privacy Enhancing Technologies](https://www1.icsi.berkeley.edu/~mct/pubs/www18.pdf) (Tschantz et al., 2019)
