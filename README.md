@@ -39,6 +39,7 @@ web fingerprinting research
 - [Bot detection 101 #3 – Cheating browser fingerprinting](https://adtechmadness.wordpress.com/2019/03/11/bot-detection-101-3-cheating-browser-fingerprinting/) (Adtech Madness, 2019)
 - [Bot detection 101 #2 – Entering browser fingerprinting](https://adtechmadness.wordpress.com/2019/03/05/bot-detection-101-2-entering-browser-fingerprinting/) (Adtech Madness, 2019)
 - [Bot detection 101 #1 – Preface](https://adtechmadness.wordpress.com/2019/03/04/bot-detection-101-1-preface/) (Adtech Madness, 2019)
+- [Evaluating the privacy implications of a canvas fingerprinting countermeasure](https://antoinevastel.com/tracking/2018/07/01/eval-canvasdef.html) (Antoine Vastel, 2018)
 - [Dull captaincy or the way Tor Project fights browser fingerprinting](https://github.com/KOLANICH-research/Article-2015-Dull-captaincy-or-the-way-Tor-Project-fights-browser-fingerprinting) (KOLANICH, 2015)
 
 ## Talks
