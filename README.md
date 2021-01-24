@@ -42,6 +42,7 @@ web fingerprinting research
 - [Dull captaincy or the way Tor Project fights browser fingerprinting](https://github.com/KOLANICH-research/Article-2015-Dull-captaincy-or-the-way-Tor-Project-fights-browser-fingerprinting) (KOLANICH, 2015)
 
 ## Talks
+- [The Elephant In The Background: Empowering Users Against Browser Fingerprinting](https://www.youtube.com/watch?v=T6UtEjUWXzM) (Julian Fietkau, 2020)
 - [Learning-based Practical Smartphone Eavesdropping with Built-in Accelerometer](https://www.youtube.com/watch?v=o4qJg32miVA) (Shiqing Luo, 2020)
 - [Taming The Shape Shifter: Detecting Anti-fingerprinting Browsers](https://www.youtube.com/watch?v=7KYg8qV5Z1Y) (Babak Amin Azad, 2020)
 - [Exploring the Privacy Threats of Browser Extension Fingerprinting](https://www.youtube.com/watch?v=mfmAWRzpbCU) (Soroush Karami, 2020)
