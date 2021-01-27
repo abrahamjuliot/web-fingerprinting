@@ -316,7 +316,6 @@ const getPrototypeLies = iframeWindow => {
                                 if (typeof apiFunction == 'function') {
                                     res = getLies(proto[name], proto)
                                     if (res.lied) {
-                                        documentLie(apiName, res.lieTypes)
                                         return (props[apiName] = res.lieTypes)
                                     }
                                     return
@@ -326,13 +325,11 @@ const getPrototypeLies = iframeWindow => {
                             const getterFunction = Object.getOwnPropertyDescriptor(proto, name).get
                             res = getLies(getterFunction, proto, obj) // send the obj for special tests
                             if (res.lied) {
-                                documentLie(apiName, res.lieTypes)
                                 return (props[apiName] = res.lieTypes)
                             }
                             return
                         } catch (error) {
                             const lie = `failed prototype test execution`
-                            documentLie(apiName, lie)
                             return (
                                 props[apiName] = [lie]
                             )
