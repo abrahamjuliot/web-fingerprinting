@@ -45,6 +45,50 @@ const getPrototypeLies = iframeWindow => {
         return hasInvalidValue ? true : false
     }
 
+    // accessing the property from the prototype should throw a TypeError
+    const getIllegalTypeErrorLie = (obj, name) => {
+        const proto = obj.prototype
+        try {
+            proto[name]
+            //console.log(obj.name, name)
+            return true
+        } catch (error) {
+            return error.constructor.name != 'TypeError' ? true : false
+        }
+        const illegal = [
+            '',
+            'is',
+            'call',
+            'seal',
+            'keys',
+            'bind',
+            'apply',
+            'assign',
+            'freeze',
+            'values',
+            'entries',
+            'toString',
+            'isFrozen',
+            'isSealed',
+            'constructor',
+            'isExtensible',
+            'getPrototypeOf',
+            'preventExtensions',
+            'propertyIsEnumerable',
+            'getOwnPropertySymbols',
+            'getOwnPropertyDescriptors'
+        ]
+        const lied = !!illegal.find(prop => {
+            try {
+                prop == '' ? Object(proto[name]) : Object[prop](proto[name])
+                return true
+            } catch (error) {
+                return error.constructor.name != 'TypeError' ? true : false
+            }
+        })
+        return lied
+    }
+
     // calling the interface prototype on the function should throw a TypeError
     const getCallInterfaceTypeErrorLie = (apiFunction, proto) => {
         try {
@@ -201,19 +245,20 @@ const getPrototypeLies = iframeWindow => {
         const name = apiFunction.name.replace(/get\s/, '')
         const lies = {
             // custom lie string names
-            [`a: object constructor descriptor should return undefined properties`]: obj ? getUndefinedValueLie(obj, name) : false,
-            [`b: calling the interface prototype on the function should throw a TypeError`]: getCallInterfaceTypeErrorLie(apiFunction, proto),
-            [`c: applying the interface prototype on the function should throw a TypeError`]: getApplyInterfaceTypeErrorLie(apiFunction, proto),
-            [`d: creating a new instance of the function should throw a TypeError`]: getNewInstanceTypeErrorLie(apiFunction),
-            [`e: extending the function on a fake class should throw a TypeError`]: getClassExtendsTypeErrorLie(apiFunction),
-            [`f: setting prototype to null and converting to a string should throw a TypeError`]: getNullConversionTypeErrorLie(apiFunction),
-            [`g: toString() and toString.toString() should return a native string in all frames`]: getToStringLie(apiFunction, name, iframeWindow),
-            [`h: "prototype" in function should not exist`]: getPrototypeInFunctionLie(apiFunction),
-            [`i: "arguments", "caller", "prototype", "toString"  should not exist in descriptor`]: getDescriptorLie(apiFunction),
-            [`j: "arguments", "caller", "prototype", "toString" should not exist as own property`]: getOwnPropertyLie(apiFunction),
-            [`k: descriptor keys should only contain "name" and "length"`]: getDescriptorKeysLie(apiFunction),
-            [`l: own property names should only contain "name" and "length"`]: getOwnPropertyNamesLie(apiFunction),
-            [`m: own keys names should only contain "name" and "length"`]: getOwnKeysLie(apiFunction)
+            [`a: accessing the property from the prototype should throw a TypeError`]: obj ? getIllegalTypeErrorLie(obj, name) : false,
+            [`b: object constructor descriptor should return undefined properties`]: obj ? getUndefinedValueLie(obj, name) : false,
+            [`c: calling the interface prototype on the function should throw a TypeError`]: getCallInterfaceTypeErrorLie(apiFunction, proto),
+            [`d: applying the interface prototype on the function should throw a TypeError`]: getApplyInterfaceTypeErrorLie(apiFunction, proto),
+            [`e: creating a new instance of the function should throw a TypeError`]: getNewInstanceTypeErrorLie(apiFunction),
+            [`f: extending the function on a fake class should throw a TypeError`]: getClassExtendsTypeErrorLie(apiFunction),
+            [`g: setting prototype to null and converting to a string should throw a TypeError`]: getNullConversionTypeErrorLie(apiFunction),
+            [`h: toString() and toString.toString() should return a native string in all frames`]: getToStringLie(apiFunction, name, iframeWindow),
+            [`i: "prototype" in function should not exist`]: getPrototypeInFunctionLie(apiFunction),
+            [`j: "arguments", "caller", "prototype", "toString"  should not exist in descriptor`]: getDescriptorLie(apiFunction),
+            [`k: "arguments", "caller", "prototype", "toString" should not exist as own property`]: getOwnPropertyLie(apiFunction),
+            [`l: descriptor keys should only contain "name" and "length"`]: getDescriptorKeysLie(apiFunction),
+            [`m: own property names should only contain "name" and "length"`]: getOwnPropertyNamesLie(apiFunction),
+            [`n: own keys names should only contain "name" and "length"`]: getOwnKeysLie(apiFunction)
         }
         const lieTypes = Object.keys(lies).filter(key => !!lies[key])
         return {
@@ -252,8 +297,8 @@ const getPrototypeLies = iframeWindow => {
                         }
                         const objectNameString = /\s(.+)\]/
                         const apiName = `${
-						obj.name ? obj.name : objectNameString.test(obj) ? objectNameString.exec(obj)[1] : undefined
-					}.${name}`
+								obj.name ? obj.name : objectNameString.test(obj) ? objectNameString.exec(obj)[1] : undefined
+								}.${name}`
                         propsSearched.push(apiName)
                         try {
                             const proto = obj.prototype ? obj.prototype : obj
@@ -278,8 +323,9 @@ const getPrototypeLies = iframeWindow => {
                             }
                             return
                         } catch (error) {
-                            // API may be blocked or unsupported
-                            return console.error(`${apiName} test failed`)
+                            return (
+                                props[apiName] = [`z: prototype tests should not fail execution`]
+                            )
                         }
                     })
             }
@@ -549,9 +595,9 @@ if (iframeContainerDiv) {
 const perf = performance.now() - start
 
 // check lies later in any function
-//lieList.includes('HTMLCanvasElement.toDataURL') // returns true or false
-//lieDetail['HTMLCanvasElement.toDataURL'] // returns the list of lies
+lieList.includes('HTMLCanvasElement.toDataURL') // returns true or false
+lieDetail['HTMLCanvasElement.toDataURL'] // returns the list of lies
 
-//console.log(propsSearched)
-//console.log(lieList)
-//console.log(lieDetail)
+console.log(propsSearched)
+console.log(lieList)
+console.log(lieDetail)
