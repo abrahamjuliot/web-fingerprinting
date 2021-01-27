@@ -446,6 +446,11 @@ const getPrototypeLies = iframeWindow => {
     searchLies(() => Function, {
         target: [
             'toString',
+        ],
+        ignore: [
+            // Chrome Firefox returns false positives
+            'caller',
+            'arguments'
         ]
     })
     searchLies(() => HTMLCanvasElement)
