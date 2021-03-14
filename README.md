@@ -2,6 +2,7 @@
 web fingerprinting research
 
 ## Papers
+- [Prime+Probe 1, JavaScript 0: Overcoming Browser-based Side-Channel Defenses](https://arxiv.org/pdf/2103.04952.pdf) (Shusterman et al., 2021)
 - [Tales of Favicons and Caches: Persistent Tracking in Modern Browsers](https://www.cs.uic.edu/~polakis/papers/solomos-ndss21.pdf) (Polakis et al., 2021)
 - [The Elephant in the Background: A Quantitative Approach to Empower Users Against Web Browser Fingerprinting](https://easychair.org/publications/preprint_open/H7Dc) (Fietkau et al., 2020)
 - [Taint Analysis for Browser Fingerprinting](https://www.ekzhang.com/assets/pdf/Browser_Fingerprinting.pdf) (Zhang et al., 2020)
