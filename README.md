@@ -2,6 +2,7 @@
 web fingerprinting research
 
 ## Papers
+- [BrFAST: a Tool to Select Browser Fingerprinting Attributes for Web Authentication According to a Usability-Security Trade-off](https://arxiv.org/pdf/2104.09175.pdf) (Andriamilanto et al., 2021)
 - [Prime+Probe 1, JavaScript 0: Overcoming Browser-based Side-Channel Defenses](https://arxiv.org/pdf/2103.04952.pdf) (Shusterman et al., 2021)
 - [Tales of Favicons and Caches: Persistent Tracking in Modern Browsers](https://www.cs.uic.edu/~polakis/papers/solomos-ndss21.pdf) (Polakis et al., 2021)
 - [Estimation of the time for calculating the attributes of browser fingerprints in the user authentication task](https://www.e3s-conferences.org/articles/e3sconf/pdf/2020/84/e3sconf_TPACEE2020_01030.pdf) (Iskhakov et al., 2020)
