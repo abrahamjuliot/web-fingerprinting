@@ -96,6 +96,7 @@ web fingerprinting research
 - https://arkenfox.github.io/TZP
 - https://privacycheck.sec.lrz.de
 - https://canvasblocker.kkapsner.de/test
+- https://privacy-test-pages.glitch.me/
 
 ## Test Suites
 - https://www.lambdatest.com
