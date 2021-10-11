@@ -93,6 +93,7 @@ web fingerprinting research
 
 ## Browser Mitigation
 - [Mitigating Browser Fingerprinting in Web Specifications](https://www.w3.org/TR/fingerprinting-guidance) (W3C)
+- [Technical Comments on Privacy Budget](https://mozilla.github.io/ppa-docs/privacy-budget.pdf) (Eric Rescorla, 2021)
 
 ## Test Sites
 - https://arkenfox.github.io/TZP
