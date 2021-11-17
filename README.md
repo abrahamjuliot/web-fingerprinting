@@ -2,6 +2,7 @@
 web fingerprinting research
 
 ## Papers
+- [Online Website Fingerprinting: Evaluating Website Fingerprinting Attacks on Tor in the Real World](https://www.usenix.org/system/files/sec22summer_cherubin.pdf) (Cherubin et al., 2021)
 - [Gummy Browsers: Targeted Browser Spoofing against State-of-the-Art Fingerprinting Techniques](https://arxiv.org/pdf/2110.10129.pdf) (Liu et al., 2021)
 - [A Study of Feasibility and Diversity of Web Audio Fingerprints](https://arxiv.org/pdf/2107.14201.pdf) (Vadrevu et al., 2021)
 - [EssentialFP: Exposing the Essence of Browser Fingerprinting](https://www.cse.chalmers.se/~andrei/secweb21.pdf) (Sjösten et al., 2021)
