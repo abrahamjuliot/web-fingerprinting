@@ -34,6 +34,7 @@ web fingerprinting research
 - [FP-STALKER: Tracking Browser Fingerprint Evolutions](https://hal.inria.fr/hal-01652021/document) (Laperdrix et al., 2017)
 - [Battery Status Not Included: Assessing Privacy in Web Standards](https://www.cs.princeton.edu/~arvindn/publications/battery-status-case-study.pdf) (Englehardt et al., 2017)
 - [Inhibiting Browser Fingerprinting and Tracking](https://eprints.soton.ac.uk/408726/1/possible_to_tackle_fingerprinting_complete2.pdf) (Luangmaneerote et al., 2017)
+- [Picasso: Lightweight Device Class Fingerprinting for Web Clients](https://research.google.com/pubs/archive/45581.pdf) (Bursztein et al., 2016)
 - [Online tracking: A 1-million-site measurement and analysis](https://www.cs.princeton.edu/~arvindn/publications/OpenWPM_1_million_site_tracking_measurement.pdf) (Englehardt, et al., 2016)
 - [The Leaking Battery](https://eprint.iacr.org/2015/616.pdf) (Olejnik et al., 2015)
 - [FPGuard: Detection and Prevention of Browser Fingerprinting](https://www.researchgate.net/publication/300781053_FPGuard_Detection_and_Prevention_of_Browser_Fingerprinting) (Weldemariam et al., 2015)
