@@ -2,6 +2,7 @@
 web fingerprinting research
 
 ## Papers
+- [DRAWN APART: A Device Identification Technique based on Remote GPU Fingerprinting](https://arxiv.org/pdf/2201.09956.pdf) (Laperdrix et al., 2022)
 - [Online Website Fingerprinting: Evaluating Website Fingerprinting Attacks on Tor in the Real World](https://www.usenix.org/system/files/sec22summer_cherubin.pdf) (Cherubin et al., 2021)
 - [Gummy Browsers: Targeted Browser Spoofing against State-of-the-Art Fingerprinting Techniques](https://arxiv.org/pdf/2110.10129.pdf) (Liu et al., 2021)
 - [A Study of Feasibility and Diversity of Web Audio Fingerprints](https://arxiv.org/pdf/2107.14201.pdf) (Vadrevu et al., 2021)
