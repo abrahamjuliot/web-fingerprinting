@@ -48,6 +48,7 @@ web fingerprinting research
 - [How Unique Is Your Web Browser?](https://panopticlick.eff.org/static/browser-uniqueness.pdf) (Eckersley, 2010)
 
 ## Articles
+- [Explaining DrawnApart, a remote GPU fingerprinting technique](https://blog.amiunique.org/an-explicative-article-on-drawnapart-a-gpu-fingerprinting-technique/) (Laperdrix, 2022)
 - [How anti-fingerprinting extensions tend to make fingerprinting easier](https://palant.info/2020/12/10/how-anti-fingerprinting-extensions-tend-to-make-fingerprinting-easier/) (Palant, 2020)
 - [Shedding light on designing web features with privacy: risks, impact assessments, case study](https://blog.lukaszolejnik.com/shedding-light-on-designing-web-features-with-privacy-risks-impact-assessments-case-study/) (Olejnik, 2020)
 - [Detecting Privacy Badger’s Canvas FP detection](https://adtechmadness.wordpress.com/2020/03/27/detecting-privacy-badgers-canvas-fp-detection/) (Adtech Madness, 2020)
