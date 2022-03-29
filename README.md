@@ -3,6 +3,7 @@ web fingerprinting research
 
 ## Papers
 - [DRAWN APART: A Device Identification Technique based on Remote GPU Fingerprinting](https://arxiv.org/pdf/2201.09956.pdf) (Laperdrix et al., 2022)
+- [FP-Radar: Longitudinal Measurement and Early Detection of Browser Fingerprinting](https://arxiv.org/pdf/2112.01662.pdf) (Bahrami et al., 2021)
 - [Online Website Fingerprinting: Evaluating Website Fingerprinting Attacks on Tor in the Real World](https://www.usenix.org/system/files/sec22summer_cherubin.pdf) (Cherubin et al., 2021)
 - [Gummy Browsers: Targeted Browser Spoofing against State-of-the-Art Fingerprinting Techniques](https://arxiv.org/pdf/2110.10129.pdf) (Liu et al., 2021)
 - [A Study of Feasibility and Diversity of Web Audio Fingerprints](https://arxiv.org/pdf/2107.14201.pdf) (Vadrevu et al., 2021)
@@ -60,6 +61,7 @@ web fingerprinting research
 - [Dull captaincy or the way Tor Project fights browser fingerprinting](https://github.com/KOLANICH-research/Article-2015-Dull-captaincy-or-the-way-Tor-Project-fights-browser-fingerprinting) (KOLANICH, 2015)
 
 ## Talks
+- [FP-Radar: Early Detection of New Browser Fingerprinting Techniques](https://youtu.be/CO6ivi_IQDs) (Pouneh Nikkhah Bahram, 2021)
 - [The Elephant In The Background: Empowering Users Against Browser Fingerprinting](https://www.youtube.com/watch?v=T6UtEjUWXzM) (Julian Fietkau, 2020)
 - [Learning-based Practical Smartphone Eavesdropping with Built-in Accelerometer](https://www.youtube.com/watch?v=o4qJg32miVA) (Shiqing Luo, 2020)
 - [Taming The Shape Shifter: Detecting Anti-fingerprinting Browsers](https://www.youtube.com/watch?v=7KYg8qV5Z1Y) (Babak Amin Azad, 2020)
