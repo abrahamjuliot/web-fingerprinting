@@ -49,6 +49,12 @@ web fingerprinting research
 - [Fingerprinting Information in JavaScript Implementations](https://cseweb.ucsd.edu/~kmowery/papers/js-fingerprinting.pdf) (Mowery et al., 2011)
 - [How Unique Is Your Web Browser?](https://panopticlick.eff.org/static/browser-uniqueness.pdf) (Eckersley, 2010)
 
+## Attacks
+- [Hacky Racers: Exploiting Instruction-Level Parallelism to Generate Stealthy Fine-Grained Timers](https://arxiv.org/pdf/2211.14647.pdf) (Ainsworth et al., 2022)
+- [Targeted Deanonymization via the Cache Side Channel: Attacks and Defenses](https://leakuidatorplusteam.github.io/preprint.pdf) (Zaheri et al., 2022)
+- [The Clock is Still Ticking: Timing Attacks in the Modern Web](https://tom.vg/papers/timing-attacks_ccs2015.pdf) (Nikiforakis et al., 2015)
+- [Timing Attacks on Web Privacy](https://www.cs.umd.edu/~jkatz/TEACHING/comp_sec_F04/downloads/web-timing.pdf) (Felten et al., 2000)
+
 ## Articles
 - [Explaining DrawnApart, a remote GPU fingerprinting technique](https://blog.amiunique.org/an-explicative-article-on-drawnapart-a-gpu-fingerprinting-technique/) (Laperdrix, 2022)
 - [How anti-fingerprinting extensions tend to make fingerprinting easier](https://palant.info/2020/12/10/how-anti-fingerprinting-extensions-tend-to-make-fingerprinting-easier/) (Palant, 2020)
