@@ -50,6 +50,7 @@ web fingerprinting research
 - [How Unique Is Your Web Browser?](https://panopticlick.eff.org/static/browser-uniqueness.pdf) (Eckersley, 2010)
 
 ## Attacks
+- [Browser-based CPU Fingerprinting](https://publications.cispa.saarland/3745/) (Trampert et al., 2022)
 - [Hacky Racers: Exploiting Instruction-Level Parallelism to Generate Stealthy Fine-Grained Timers](https://arxiv.org/pdf/2211.14647.pdf) (Ainsworth et al., 2022)
 - [Targeted Deanonymization via the Cache Side Channel: Attacks and Defenses](https://leakuidatorplusteam.github.io/preprint.pdf) (Zaheri et al., 2022)
 - [The Clock is Still Ticking: Timing Attacks in the Modern Web](https://tom.vg/papers/timing-attacks_ccs2015.pdf) (Nikiforakis et al., 2015)
