@@ -2,6 +2,7 @@
 web fingerprinting research
 
 ## Papers
+- [Fashion Faux Pas: Implicit Stylistic Fingerprints for Bypassing Browsers' Anti-Fingerprinting Defenses](https://www.computer.org/csdl/proceedings-article/sp/2023/933600b640/1Js0Ecrxjzi) (Lin et al., 2023)
 - [DRAWN APART: A Device Identification Technique based on Remote GPU Fingerprinting](https://arxiv.org/pdf/2201.09956.pdf) (Laperdrix et al., 2022)
 - [FP-Radar: Longitudinal Measurement and Early Detection of Browser Fingerprinting](https://arxiv.org/pdf/2112.01662.pdf) (Bahrami et al., 2021)
 - [Online Website Fingerprinting: Evaluating Website Fingerprinting Attacks on Tor in the Real World](https://www.usenix.org/system/files/sec22summer_cherubin.pdf) (Cherubin et al., 2021)
